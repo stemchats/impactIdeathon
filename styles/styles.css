@@ -7,54 +7,6 @@
           box-sizing: border-box;
 }
 
-* a {
-  color: #fa9856;
-  border-bottom: 1px dashed #ccc;
-  text-decoration: none;
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
-
-* a:hover, * a:active {
-  text-decoration: none;
-  color: #fa9856;
-  border-bottom: 1px dashed #fa9856;
-}
-
-body {
-  padding-top: 5em;
-  overflow-x: hidden;
-}
-
-body li {
-  margin-bottom: 0.75rem;
-}
-
-.important {
-  padding: 20px;
-  border: 1px solid #fa9856;
-  text-align: center;
-  border-radius: 25px;
-  font-size: 16px;
-  background: white;
-  margin-bottom: 20px;
-}
-
-.icons {
-  font-size: 40px;
-}
-
-.icons a {
-  border: none;
-  color: black;
-  opacity: 0.5;
-}
-
-.icons a:hover {
-  color: #fa9856;
-  opacity: 1;
-}
-
 .small-box-title {
   font-size: 32px;
   font-weight: bold;

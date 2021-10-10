@@ -16,53 +16,6 @@ $small-font-description: 18px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    a {
-        color: $orange-color;
-        border-bottom: 1px dashed #ccc;
-        text-decoration: none;
-        transition: all .3s;
-
-        &:hover, &:active {
-            text-decoration: none;
-            color: $orange-color;
-            border-bottom: 1px dashed $orange-color;
-        }
-    }
-}
-
-body {
-    padding-top: 5em;
-    overflow-x: hidden;
-
-    li {
-        margin-bottom: 0.75rem;
-    }
-}
-
-.important {
-    padding: 20px;
-    border: 1px solid $orange-color;
-    text-align: center;
-    border-radius: 25px;
-    font-size: 16px;
-    background: white;
-    margin-bottom: 20px;
-}
-
-.icons {
-    font-size: 40px;
-
-    a {
-        border: none;
-        color: black;
-        opacity: 0.5;
-
-        &:hover {
-            color: $orange-color;
-            opacity: 1;
-        }
-    }
 }
 
 .small-box-title {
