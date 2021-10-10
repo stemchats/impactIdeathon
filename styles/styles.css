@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+* {
+  font-family: "Karla", sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* a {
+  color: #fa9856;
+  border-bottom: 1px dashed #ccc;
+  text-decoration: none;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+* a:hover, * a:active {
+  text-decoration: none;
+  color: #fa9856;
+  border-bottom: 1px dashed #fa9856;
+}
+
+body {
+  padding-top: 5em;
+  overflow-x: hidden;
+}
+
+body li {
+  margin-bottom: 0.75rem;
+}
+
+.important {
+  padding: 20px;
+  border: 1px solid #fa9856;
+  text-align: center;
+  border-radius: 25px;
+  font-size: 16px;
+  background: white;
+  margin-bottom: 20px;
+}
+
+.icons {
+  font-size: 40px;
+}
+
+.icons a {
+  border: none;
+  color: black;
+  opacity: 0.5;
+}
+
+.icons a:hover {
+  color: #fa9856;
+  opacity: 1;
+}
+
+.small-box-title {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.large-box-title {
+  font-weight: bold;
+  font-size: 50px;
+  text-transform: capitalize;
+}
+
+.medium-box-title {
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 2rem;
+}
+
+.box-description {
+  font-size: 18px;
+}
+
+h1 {
+  color: #fa9856;
+  font-size: 32px;
+}
+
+h2 {
+  color: #22559c;
+  font-size: 30px;
+}
+
+h3 {
+  color: #9eb5d4;
+  font-size: 18px;
+}
+/*# sourceMappingURL=styles.css.map */

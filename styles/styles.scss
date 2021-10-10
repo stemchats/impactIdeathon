@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+
+// FONTS & COLORS
+$orange-color: #fa9856;
+$red-color: #f27370;
+$dark-blue: #22559c;
+$light-blue: #9eb5d4;
+$darker-blue: #26589d;
+$main-font :  'Karla', sans-serif;
+$small-font-title: 32px;
+$small-font-description: 18px;
+
+// DEFAULT STYLES
+* {
+    font-family: $main-font;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    a {
+        color: $orange-color;
+        border-bottom: 1px dashed #ccc;
+        text-decoration: none;
+        transition: all .3s;
+
+        &:hover, &:active {
+            text-decoration: none;
+            color: $orange-color;
+            border-bottom: 1px dashed $orange-color;
+        }
+    }
+}
+
+body {
+    padding-top: 5em;
+    overflow-x: hidden;
+
+    li {
+        margin-bottom: 0.75rem;
+    }
+}
+
+.important {
+    padding: 20px;
+    border: 1px solid $orange-color;
+    text-align: center;
+    border-radius: 25px;
+    font-size: 16px;
+    background: white;
+    margin-bottom: 20px;
+}
+
+.icons {
+    font-size: 40px;
+
+    a {
+        border: none;
+        color: black;
+        opacity: 0.5;
+
+        &:hover {
+            color: $orange-color;
+            opacity: 1;
+        }
+    }
+}
+
+.small-box-title {
+    font-size: $small-font-title;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.large-box-title {
+    font-weight: bold;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+
+.medium-box-title{
+    font-weight: bold;
+    text-align: center;
+    // text-transform: capitalize;
+    font-size: 40px;
+    margin-top: 2rem;
+}
+
+.box-description {
+    font-size: $small-font-description;
+}
+
+h1 {
+    color: $orange-color;
+    font-size: $small-font-title;
+}
+
+h2 {
+    color: $dark-blue;
+    font-size: 30px;
+}
+
+h3 {
+    color: $light-blue;
+    font-size: $small-font-description;
+}
+
