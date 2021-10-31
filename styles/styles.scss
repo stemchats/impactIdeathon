@@ -58,3 +58,22 @@ h3 {
     font-size: $small-font-description;
 }
 
+// HOME
+
+.parent {
+    display: flex;
+}
+
+.hero-img {
+    width: 700px;
+}
+
+.right {
+    text-align: right;
+}
+
+.desc {
+    margin-left: 100px;
+    margin-top: 130px;
+}
+

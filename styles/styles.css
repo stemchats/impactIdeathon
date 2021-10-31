@@ -44,4 +44,23 @@ h3 {
   color: #9eb5d4;
   font-size: 20px;
 }
+
+.parent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero-img {
+  width: 700px;
+}
+
+.right {
+  text-align: right;
+}
+
+.desc {
+  margin-left: 100px;
+  margin-top: 130px;
+}
 /*# sourceMappingURL=styles.css.map */
