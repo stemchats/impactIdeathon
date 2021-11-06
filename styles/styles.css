@@ -17,6 +17,7 @@
   font-weight: bold;
   font-size: 50px;
   text-transform: capitalize;
+  padding: 20px;
 }
 
 .medium-box-title {
@@ -43,5 +44,49 @@ h2 {
 h3 {
   color: #9eb5d4;
   font-size: 20px;
+}
+
+.container-fluid {
+  margin: 30px;
+  margin-top: 50px;
+}
+
+.card {
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  height: 500px;
+}
+
+.card .card-img {
+  padding: 10px;
+  width: 100px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding-top: 15px;
+}
+
+.card .card-text {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card .card-title {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.card .card-text {
+  text-align: center;
+}
+
+.row {
+  padding: 20px;
+}
+
+.img-windmill {
+  width: 290px;
 }
 /*# sourceMappingURL=styles.css.map */
