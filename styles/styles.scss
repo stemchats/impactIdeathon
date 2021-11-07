@@ -11,6 +11,15 @@ $main-font :  'Karla', sans-serif;
 $small-font-title: 32px;
 $small-font-description: 20px;
 
+
+@mixin center {
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
 // DEFAULT STYLES
 * {
     font-family: $main-font;
@@ -117,5 +126,69 @@ h3 {
 .desc {
     margin-left: 100px;
     margin-top: 130px;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 60px;
+    background: white;
+    z-index: 1000;
+    transition: top 0.3s;
+    //overflow: hidden;
+    a {
+        text-decoration: none;
+        color: black;
+        transition: 0.2s;
+    }
+
+    .collapsible-menu {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        top: 30px;
+        transition: 0.3s;
+
+        ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            position: absolute;
+            top: 50%;
+            left: 80%;
+            transform: translate(-50%, -50%);
+
+            .nav-link {
+                margin: 0 30px;
+                padding: 0;
+                font-size: 18px;
+                border-bottom: 2px solid rgba($color: $yellow, $alpha: 0.0);
+                transition: 0.3s;
+                line-height: initial;
+                white-space: nowrap;
+
+                &:hover {
+                    border-bottom: 2px solid $yellow;
+                }
+            }
+
+            .nav-item {
+                font-size: 18px;
+                justify-content: center;
+                text-align: center;
+                align-items: center !important;
+                text-align: left !important;
+            }
+            
+        
+        }
+    }
 }
 
