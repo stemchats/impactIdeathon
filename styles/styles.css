@@ -1,16 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
-.nav-item {
-  font-size: 18px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  text-align: center;
-  -webkit-box-align: center !important;
-      -ms-flex-align: center !important;
-          align-items: center !important;
-  text-align: left !important;
-}
-
 * {
   font-family: "Karla", sans-serif;
   margin: 0;
@@ -102,23 +90,118 @@ h3 {
   width: 290px;
 }
 
+.title {
+  margin-top: 100px;
+  text-align: center;
+  color: #22559c;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.title-desc {
+  text-align: center;
+  font-weight: lighter;
+  font-size: 25px;
+  color: #22559c;
+}
+
+.home-desc {
+  text-align: center;
+  margin: 10px 200px 30px 200px;
+  font-size: 30px;
+  z-index: 2;
+  margin-top: 100px;
+  color: #22559c;
+}
+
+.hero-img {
+  width: 1000px;
+}
+
 .parent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.hero-img {
-  width: 700px;
+  overflow: hidden;
+  display: -ms-grid;
+  display: grid;
 }
 
 .right {
-  text-align: right;
+  position: absolute;
+  top: 200px;
+  right: 0;
 }
 
-.desc {
-  margin-left: 100px;
-  margin-top: 130px;
+.quote {
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 2rem;
+}
+
+.quote blockquote::before,
+.quote blockquote::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  opacity: 0.25;
+  font-size: 36px;
+  color: #22559a;
+}
+
+.quote blockquote::before {
+  content: '\f10d';
+  margin-top: -20px;
+  margin-left: -30px;
+}
+
+.quote blockquote::after {
+  content: '\f10e';
+  margin-top: -10px;
+  margin-left: -5px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #f1f1f1f1;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+}
+
+.mySlides blockquote {
+  text-align: left;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 header {
@@ -138,25 +221,68 @@ header {
   z-index: 1000;
   -webkit-transition: top 0.3s;
   transition: top 0.3s;
-  /* */
 }
 
-header #menu-icon, header #menu-icon ~ label, header input[type=checkbox] {
-  display: none;
-  z-index: 5;
+header a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-header .block {
+header .collapsible-menu {
+  position: fixed;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  top: 30px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
-header .block .stemchats {
-  margin-left: 35px;
-  margin-top: 23px;
+header .collapsible-menu ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 0;
-  -webkit-transition: opacity 0.3s;
-  transition: opacity 0.3s;
+  position: absolute;
+  top: 50%;
+  left: 80%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .collapsible-menu ul .nav-link {
+  margin: 0 30px;
+  padding: 0;
+  font-size: 18px;
+  border-bottom: 2px solid rgba(250, 152, 86, 0);
+  /* used to be $yellow */
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  line-height: initial;
+  white-space: nowrap;
+}
+
+header .collapsible-menu ul .nav-link:hover {
+  border-bottom: 2px solid #fa9856;
+  /* used to be $yellow */
+}
+
+header .collapsible-menu ul .nav-item {
+  font-size: 18px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  text-align: left !important;
 }
 /*# sourceMappingURL=styles.css.map */
