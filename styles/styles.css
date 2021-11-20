@@ -86,8 +86,14 @@ h3 {
   padding: 20px;
 }
 
-.img-windmill {
-  width: 290px;
+.img-windmill2 {
+  max-width: 290px;
+  height: auto;
+}
+
+.img-windmill1 {
+  max-width: 285px;
+  height: auto;
 }
 
 .title {
@@ -284,5 +290,27 @@ header .collapsible-menu ul .nav-item {
       -ms-flex-align: center !important;
           align-items: center !important;
   text-align: left !important;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+footer .socials {
+  margin: 20px;
+  text-align: center;
+}
+
+footer .socials .icon {
+  padding: 10px;
+  color: white;
+}
+
+footer p {
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

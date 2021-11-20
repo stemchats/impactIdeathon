@@ -106,8 +106,14 @@ h3 {
     padding:20px;
 }
 
-.img-windmill{
-    width: 290px;
+.img-windmill2{
+    max-width: 290px;
+    height:auto;
+}
+
+.img-windmill1{
+    max-width: 285px;
+    height:auto;
 }
 // HOME
 
@@ -282,5 +288,24 @@ header {
             
         
         }
+    }
+}
+
+footer{
+    margin-top: 100px;
+    .copyright{
+        text-align: center;
+    }
+    .socials{
+        margin: 20px;
+        text-align: center;
+        .icon{
+            padding:10px;
+            color:white;
+        }
+    }
+    
+    p{
+        color:white;
     }
 }
