@@ -10,6 +10,7 @@ $darker-blue: #26589d;
 $main-font :  'Karla', sans-serif;
 $small-font-title: 32px;
 $small-font-description: 20px;
+$card-border-width: 0px; 
 
 
 @mixin center {
@@ -74,12 +75,18 @@ h3 {
     margin-top: 50px;
 }
 
+// .card .card card col-lg-4 col-xs-2{
+//     border: 500px !important;
+//     border-radius: 0.6rem !important; 
+// }
 
 .card{
     margin-left:20px;
     margin-right:20px;
     padding:10px;
     height:500px;
+    // border: $card-border-width;
+    // border-radius: 0.6rem !important;
 
     .card-img{
         padding:10px;
@@ -292,7 +299,7 @@ header {
 }
 
 #intro {
-    @include largeFlexCenter();
+    // @include largeFlexCenter();
     padding-bottom: 5em;
     margin: 0em 0.5em;
 
