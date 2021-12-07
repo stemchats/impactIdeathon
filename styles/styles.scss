@@ -71,8 +71,9 @@ h3 {
 
 
 .container-fluid{
-    margin:30px;
+    margin: 30px;
     margin-top: 50px;
+    min-height: 100vh;
 }
 
 // .card .card card col-lg-4 col-xs-2{
@@ -200,13 +201,17 @@ h3 {
   background: #f1f1f1f1;
 }
 
+.slideshow-text {
+    padding: 0 80px 0 80px;
+}
+
 /* Slides */
 .mySlides {
   display: none;
   padding: 80px;
   blockquote {
     text-align: left;
-  }
+  } 
 }
   
 /* Next & previous buttons */
@@ -299,7 +304,7 @@ header {
 }
 
 #intro {
-    // @include largeFlexCenter();
+    @include largeFlexCenter();
     padding-bottom: 5em;
     margin: 0em 0.5em;
 
@@ -320,7 +325,7 @@ header {
 
 
 .team {
-    @include flexCenter();
+    //@include flexCenter();
     height: 100%;
     padding: 1em;
     background-color: white;
@@ -329,7 +334,7 @@ header {
     .dropdown-item {
         &:hover {
             border: none;
-            color: $main-color;
+            //color: $main-color;
             background-color: white;
         }
         &:active {
@@ -430,9 +435,9 @@ footer{
         color: #ddd;
         transition: all .3s;
 
-        &:hover, &:focus {
-            color: $main-color;
-        }
+        //&:hover, &:focus {
+            //color: $main-color;
+        //}
     }
 }
 
@@ -456,4 +461,6 @@ footer{
 .modal-trigger { //hover over image
     cursor: pointer;
 }
+
+
 

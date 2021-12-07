@@ -49,6 +49,7 @@ h3 {
 .container-fluid {
   margin: 30px;
   margin-top: 50px;
+  min-height: 100vh;
 }
 
 .card {
@@ -175,6 +176,10 @@ h3 {
   background: #f1f1f1f1;
 }
 
+.slideshow-text {
+  padding: 0 80px 0 80px;
+}
+
 /* Slides */
 .mySlides {
   display: none;
@@ -292,38 +297,28 @@ header .collapsible-menu ul .nav-item {
   text-align: left !important;
 }
 
-footer {
-  margin-top: 100px;
+#intro {
+  padding-bottom: 5em;
+  margin: 0em 0.5em;
 }
 
-footer .copyright {
-  text-align: center;
+#intro .top-img {
+  max-width: 100%;
 }
 
-footer .socials {
-  margin: 20px;
-  text-align: center;
+#intro #arrow {
+  margin-top: 2rem;
+  -webkit-animation: bouncing 1.3s ease-in-out infinite;
+          animation: bouncing 1.3s ease-in-out infinite;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
-footer .socials .icon {
-  padding: 10px;
-  color: white;
-}
-
-footer p {
-  color: white;
+#intro #arrow.gone {
+  opacity: 0;
 }
 
 .team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100%;
   padding: 1em;
   background-color: white;
@@ -332,7 +327,6 @@ footer p {
 
 .team .dropdown-item:hover {
   border: none;
-  color: #ff5959;
   background-color: white;
 }
 
@@ -358,11 +352,33 @@ footer p {
 }
 
 .team .teamcard .teamcard-description {
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .team #team_container {
   height: 2000px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+footer .copyright {
+  text-align: center;
+}
+
+footer .socials {
+  margin: 20px;
+  text-align: center;
+}
+
+footer .socials .icon {
+  padding: 10px;
+  color: white;
+}
+
+footer p {
+  color: white;
 }
 
 .modal-header {
@@ -415,10 +431,6 @@ footer p {
   color: #ddd;
   -webkit-transition: all .3s;
   transition: all .3s;
-}
-
-.modal-body i:hover, .modal-body i:focus {
-  color: #ff5959;
 }
 
 .modal-backdrop {
