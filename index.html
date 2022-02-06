@@ -232,22 +232,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 <div class='container-fluid'>
     <div class='large-box-title'>
-        <center><h1>JUDGES<a id="judges"></a></h1></center>
-            <div class="row" id="team">
+        <center><h1>JUDGES<a id="team_container"></a></h1></center>
+            <div class="row justify-content-center" id="team">
                 <!-- all team members -->
             </div>
     </div>
 </div>
 
-<script type="text/javascript" src="/scripts/script.js"></script>
-<script type="text/javascript" src="/scripts/judges.js"></script>
+
 
 </body>
 
 <div id="footer"></div>
 
+<script type="text/javascript" src="/scripts/script.js"></script>
+<script type="text/javascript" src="/scripts/judges.js"></script>
 
-
+<script>
+    let team_container = document.getElementById("team_container");
+    team_container.style.height = "inherit";
+</script>
 
 <script>
      var slideIndex = 1;

@@ -20,6 +20,13 @@ $card-border-width: 0px;
     margin-left: auto;
 }
 
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 // DEFAULT STYLES
 * {
@@ -107,6 +114,45 @@ h3 {
 
     .card-text{
         text-align:center;
+    }
+}
+
+
+.team {
+    @include flexCenter();
+    height: 100%;
+    padding:0.5em;
+    background-color: white;
+    color: black;
+    border-radius:50%;
+    justify-content: center;
+
+    .teamcard {
+        margin-left:20px;
+        margin-right:20px;
+        padding:20px;
+        height:500px;
+
+        .teamcard-img {
+            border-radius:50%;
+        }
+        .teamcard-title {
+            font-weight: bold;
+            font-size: 24px;
+            justify-content: center;
+        }
+        .teamcard-description {
+            font-size: $small-font-description;
+            justify-content: center;
+            
+        }
+        .teamcard-body {
+            justify-content: center;
+        }
+    }
+
+    #team_container {
+      height: 2000px; //hide bottom of page before animation
     }
 }
 
@@ -238,6 +284,8 @@ h3 {
 
 
 
+
+
 header {
     display: flex;
     align-items: center;
@@ -303,68 +351,26 @@ header {
     }
 }
 
-#intro {
-    @include largeFlexCenter();
-    padding-bottom: 5em;
-    margin: 0em 0.5em;
+// #intro {
+//    // @include largeFlexCenter();
+//     padding-bottom: 5em;
+//     margin: 0em 0.5em;
 
-    .top-img {
-        max-width: 100%;
-    }
+//     .top-img {
+//         max-width: 100%;
+//     }
 
-    #arrow {
-        margin-top: 2rem;
-        animation: bouncing 1.3s ease-in-out infinite;
-        transition: 0.2s;
+//     #arrow {
+//         margin-top: 2rem;
+//         animation: bouncing 1.3s ease-in-out infinite;
+//         transition: 0.2s;
 
-        &.gone {
-            opacity: 0;
-        }
-    }
-}
+//         &.gone {
+//             opacity: 0;
+//         }
+//     }
+// }
 
-
-.team {
-    //@include flexCenter();
-    height: 100%;
-    padding: 1em;
-    background-color: white;
-    color: black;
-
-    .dropdown-item {
-        &:hover {
-            border: none;
-            //color: $main-color;
-            background-color: white;
-        }
-        &:active {
-            background-color: white;
-        }
-    }
-
-    .teamcard {
-        padding: 0.5em;
-        margin-bottom: 0em;
-        border: 1px white;
-        text-align: center;
-
-        .teamcard-img {
-            border-radius: 15px;
-            max-width: 100%;
-        }
-        .teamcard-title {
-            font-weight: bold;
-            font-size: 24px;
-        }
-        .teamcard-description {
-            font-size: $small-font-description;
-        }
-    }
-
-    #team_container {
-      height: 2000px; //hide bottom of page before animation
-    }
-}
 
 
 

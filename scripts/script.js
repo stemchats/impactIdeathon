@@ -7,11 +7,12 @@ createMembers = (members) => {
       //create card
       createCard = () => {
         divOne = document.createElement("div");
-        divOne.className = "col-md-4";
+        divOne.className = "col-md-4 col-xs-2";
+        
         divTwo = document.createElement("div");
-        divTwo.className = "card teamcard";
+        divTwo.className = "modal-trigger card teamcard";
         img = document.createElement("img");
-        img.className = "modal-trigger card-img-top teamcard-img";
+        img.className = "team";
         img.setAttribute("onClick", "removeAnimate()"); // remove aos animation/styling for modals
         img.setAttribute("alt", members[i].name);
         img.setAttribute("data-toggle", "modal");
@@ -21,7 +22,7 @@ createMembers = (members) => {
         divThree = document.createElement("div");
         divThree.className = "card-body teamcard-body";
         title = document.createElement("h3");
-        title.className = "card-title teamcard-title";
+        title.className = "card-text teamcard-title";
         title.textContent = members[i].name;
         desc = document.createElement("h3");
         desc.className = "card-text teamcard-description";
@@ -115,4 +116,45 @@ createMembers = (members) => {
       team.appendChild(createModal());
     });
 }
+
+//animation on click for the select
+loadAnimate = () => {
+  animate.style.visibility = "hidden";
+  // animate.style.display = "none";
+  window.scrollTo(0, 0);
+  setTimeout(function() {
+    animate.classList.remove("aos-animate");
+    // animate.style.display = "block";
+    setTimeout(function() {
+      animate.style.visibility = "visible";
+      animate.classList.add("aos-animate");
+    }, 600);
+  }, 50);
+}
+
+//remove styling/animation onclick modals
+removeAnimate = () => {
+  animate.removeAttribute("data-aos");
+}
+
+//add aos styling/animation after exiting modal
+addAnimate = () => {
+  setTimeout(function() {
+    animate.setAttribute("data-aos", "fade-up");
+  }, 200)
+}
+
+//add the onload delay
+animateOnload = () => {
+  animate.setAttribute("data-aos-delay", "800");
+  setTimeout(function() {
+    animate.removeAttribute("data-aos-delay");
+  }, 500);
+}
+
+//hide all team members
+hide = () => {
+  team.innerHTML = "";
+}
+
 
