@@ -200,12 +200,16 @@ h3 {
 }
 
 .hero-img {
-    width: 1000px;
+    width: 100%;
+    max-width: 1000px;
+    z-index: -1;
 }
 
 .clouds-img {
     width: 100%;
     z-index: 2;
+    position: absolute;
+    left: 0;
 }
 
 .parent {
