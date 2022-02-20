@@ -89,12 +89,14 @@ h3 {
 // }
 
 .card{
+    border-radius: 60%;
     margin-left:20px;
     margin-right:20px;
     padding:10px;
     height:500px;
-    // border: $card-border-width;
-    // border-radius: 0.6rem !important;
+    border: $card-border-width;
+    border: none !important;
+    border-radius: 1rem !important;
 
     .card-img{
         padding:10px;
@@ -249,7 +251,10 @@ h3 {
 /* Slideshow container */
 .slideshow-container {
   position: relative;
+  margin: auto;
   background: #f1f1f1f1;
+  width: 75em;
+  border-radius: 20px 20px 20px 20px;
 }
 
 .slideshow-text {
@@ -490,6 +495,7 @@ footer{
 .modal-trigger { //hover over image
     cursor: pointer;
 }
+
 
 
 
