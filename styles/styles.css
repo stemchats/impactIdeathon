@@ -64,11 +64,21 @@ h3 {
   scroll-margin-top: 3.5rem;
 }
 
+#change-the-world .card-img {
+  padding: 30px;
+}
+
+#change-the-world .card {
+  border: none;
+  border-radius: 1rem;
+  margin: 10px;
+}
+
 #team {
   margin: 0 50px;
 }
 
-.col-md-4 {
+#team .col-md-4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -77,7 +87,7 @@ h3 {
           justify-content: center;
 }
 
-.card {
+#team .card {
   margin: 10px 0;
   padding: 10px;
   max-width: 350px;
@@ -87,7 +97,7 @@ h3 {
   border-radius: 1rem !important;
 }
 
-.card .card-img-top {
+#team .card .card-img-top {
   padding: 10px;
   width: 100%;
   -ms-flex-item-align: center;
@@ -97,17 +107,17 @@ h3 {
   border-radius: 50%;
 }
 
-.card .card-body {
+#team .card .card-body {
   padding: 1rem;
 }
 
-.card .card-text {
+#team .card .card-text {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.card .card-title {
+#team .card .card-title {
   display: block;
   text-align: center;
   margin-right: auto;
@@ -116,13 +126,9 @@ h3 {
   font-size: 24px;
 }
 
-.card .card-text {
+#team .card .card-text {
   text-align: center;
   font-size: 18px;
-}
-
-.row {
-  padding: 20px;
 }
 
 .img-windmill2 {
