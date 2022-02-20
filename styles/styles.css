@@ -1,10 +1,18 @@
 @import url("https://fonts.googleapis.com/css?family=Karla&display=swap");
+.center {
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 * {
   font-family: "Karla", sans-serif;
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 .small-box-title {
@@ -52,6 +60,10 @@ h3 {
   min-height: 100vh;
 }
 
+.container-fluid:target {
+  scroll-margin-top: 3.5rem;
+}
+
 .card {
   border-radius: 60%;
   margin-left: 20px;
@@ -88,21 +100,14 @@ h3 {
 }
 
 .team {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   height: 100%;
   padding: 0.5em;
   background-color: white;
   color: black;
   border-radius: 50%;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .team .teamcard {
