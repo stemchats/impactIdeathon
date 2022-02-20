@@ -53,10 +53,14 @@ h3 {
 }
 
 .card {
+  border-radius: 60%;
   margin-left: 20px;
   margin-right: 20px;
   padding: 10px;
   height: 500px;
+  border: 0px;
+  border: none !important;
+  border-radius: 1rem !important;
 }
 
 .card .card-img {
