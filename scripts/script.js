@@ -1,18 +1,17 @@
 const animate = document.getElementById("team_container");
 const team = document.getElementById("team");
 const url = "/images/headshots/";
-
+//create all the team members
 createMembers = (members) => {
     members.forEach(function(value, i) {
       //create card
       createCard = () => {
         divOne = document.createElement("div");
-        divOne.className = "col-md-4 col-xs-2";
-        
+        divOne.className = "col-md-4";
         divTwo = document.createElement("div");
-        divTwo.className = "modal-trigger card teamcard";
+        divTwo.className = "card teamcard";
         img = document.createElement("img");
-        img.className = "team";
+        img.className = "modal-trigger card-img-top teamcard-img";
         img.setAttribute("onClick", "removeAnimate()"); // remove aos animation/styling for modals
         img.setAttribute("alt", members[i].name);
         img.setAttribute("data-toggle", "modal");
@@ -22,7 +21,7 @@ createMembers = (members) => {
         divThree = document.createElement("div");
         divThree.className = "card-body teamcard-body";
         title = document.createElement("h3");
-        title.className = "card-text teamcard-title";
+        title.className = "card-title teamcard-title";
         title.textContent = members[i].name;
         desc = document.createElement("h3");
         desc.className = "card-text teamcard-description";

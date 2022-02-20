@@ -99,21 +99,32 @@ h3 {
 //     border-radius: 0.6rem !important; 
 // }
 
+#team {
+    margin: 0 50px;
+}
+.col-md-4 {
+    display: flex;
+    justify-content: center;
+}
 .card{
-    border-radius: 60%;
-    margin-left:20px;
-    margin-right:20px;
-    padding:10px;
-    height:500px;
+    margin: 10px 0;
+    padding: 10px;
+    max-width: 350px;
+    min-width: 300px;
     border: $card-border-width;
     border: none !important;
     border-radius: 1rem !important;
 
-    .card-img{
+    .card-img-top{
         padding:10px;
-        width:100px;
+        width:100%;
         align-self: center;
         padding-top:15px;
+        border-radius: 50%;
+    }
+    
+    .card-body {
+        padding: 1rem;
     }
 
     .card-text{
@@ -121,51 +132,14 @@ h3 {
     }
 
     .card-title{
-        padding-bottom:10px;
-        padding-top:10px;
+        @include center();
+        font-weight: bold;
+        font-size: 24px;
     }
 
     .card-text{
         text-align:center;
-    }
-}
-
-
-.team {
-    // @include flexCenter();
-    height: 100%;
-    padding:0.5em;
-    background-color: white;
-    color: black;
-    border-radius:50%;
-    justify-content: center;
-
-    .teamcard {
-        margin-left:20px;
-        margin-right:20px;
-        padding:20px;
-        height:500px;
-
-        .teamcard-img {
-            border-radius:50%;
-        }
-        .teamcard-title {
-            font-weight: bold;
-            font-size: 24px;
-            justify-content: center;
-        }
-        .teamcard-description {
-            font-size: $small-font-description;
-            justify-content: center;
-            
-        }
-        .teamcard-body {
-            justify-content: center;
-        }
-    }
-
-    #team_container {
-      height: 2000px; //hide bottom of page before animation
+        font-size: 18px;
     }
 }
 

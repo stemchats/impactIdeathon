@@ -64,24 +64,41 @@ h3 {
   scroll-margin-top: 3.5rem;
 }
 
+#team {
+  margin: 0 50px;
+}
+
+.col-md-4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .card {
-  border-radius: 60%;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 10px 0;
   padding: 10px;
-  height: 500px;
+  max-width: 350px;
+  min-width: 300px;
   border: 0px;
   border: none !important;
   border-radius: 1rem !important;
 }
 
-.card .card-img {
+.card .card-img-top {
   padding: 10px;
-  width: 100px;
+  width: 100%;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
   padding-top: 15px;
+  border-radius: 50%;
+}
+
+.card .card-body {
+  padding: 1rem;
 }
 
 .card .card-text {
@@ -91,59 +108,17 @@ h3 {
 }
 
 .card .card-title {
-  padding-bottom: 10px;
-  padding-top: 10px;
+  display: block;
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .card .card-text {
   text-align: center;
-}
-
-.team {
-  height: 100%;
-  padding: 0.5em;
-  background-color: white;
-  color: black;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.team .teamcard {
-  margin-left: 20px;
-  margin-right: 20px;
-  padding: 20px;
-  height: 500px;
-}
-
-.team .teamcard .teamcard-img {
-  border-radius: 50%;
-}
-
-.team .teamcard .teamcard-title {
-  font-weight: bold;
-  font-size: 24px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.team .teamcard .teamcard-description {
-  font-size: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.team .teamcard .teamcard-body {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.team #team_container {
-  height: 2000px;
+  font-size: 18px;
 }
 
 .row {
