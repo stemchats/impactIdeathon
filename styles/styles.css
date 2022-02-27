@@ -13,6 +13,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 .small-box-title {
@@ -74,8 +75,13 @@ h3 {
   margin: 10px;
 }
 
+#team_container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
 #team {
-  margin: 0 50px;
+  margin: 0 30px;
 }
 
 #team .col-md-4 {
@@ -90,8 +96,6 @@ h3 {
 #team .card {
   margin: 10px 0;
   padding: 10px;
-  max-width: 350px;
-  min-width: 300px;
   border: 0px;
   border: none !important;
   border-radius: 1rem !important;

@@ -39,6 +39,7 @@ $card-border-width: 0px;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .small-box-title {
@@ -110,8 +111,12 @@ h3 {
     }
 }
 
+#team_container {
+    max-width: 1250px;
+    margin: 0 auto;
+}
 #team {
-    margin: 0 50px;
+    margin: 0 30px;
 
     .col-md-4 {
         display: flex;
@@ -120,8 +125,6 @@ h3 {
     .card{
         margin: 10px 0;
         padding: 10px;
-        max-width: 350px;
-        min-width: 300px;
         border: $card-border-width;
         border: none !important;
         border-radius: 1rem !important;
