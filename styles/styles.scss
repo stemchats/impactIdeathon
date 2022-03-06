@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 // FONTS & COLORS
 $orange-color: #fa9856;
@@ -67,9 +68,11 @@ $card-border-width: 0px;
     font-size: $small-font-description;
 }
 
-h1 {
-    color: $orange-color;
-    font-size: $small-font-title;
+.title, .section-title {
+    font-family: 'Josefin Sans', sans-serif;
+    color: $dark-blue;
+    font-weight: bold;
+    font-size: 60px;
 }
 
 h2 {
@@ -84,8 +87,11 @@ h3 {
 
 
 .container-fluid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     margin: 30px;
-    margin-top: 50px;
     min-height: 100vh;
 
     &:target { //allows header space when jumped to with id anchor link
@@ -167,59 +173,65 @@ h3 {
     max-width: 285px;
     height:auto;
 }
+
 // HOME
-
-.title {
-    margin-top: 100px;
-    text-align: center;
-    color: $dark-blue; 
-    font-weight: bold;
-    font-size: 100px;
-}
-
-.title-desc {
-    text-align: center;
-    font-weight: lighter;
-    font-size: 25px;
-    color: $dark-blue;
-
-}
-
-.home-desc {
-    text-align: center;
-    margin: 10px 200px 30px 200px;
-    font-size: 30px;
-    z-index: 2;
-    margin-top: 0px;
-    color: $dark-blue;
-
-}
-
-.hero-img {
-    width: 100%;
-    max-width: 1000px;
-    z-index: -1;
-}
-
-.clouds-img {
-    width: 100%;
-    z-index: 2;
-    position: absolute;
-    left: 0;
-}
-
-.parent {
+#home {
     display: flex;
-    overflow: hidden;
-    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
+    .title {
+        color: $dark-blue; 
+        font-weight: bold;
+        font-size: 100px;
+    }
+    
+    .title-desc {
+        font-weight: lighter;
+        font-size: 25px;
+        color: $dark-blue;
+    
+    }
+    
+    .home-desc {
+        max-width: 1250px;
+        margin: 10px auto;
+        padding: 0 20px;
+        font-size: 30px;
+        z-index: 2;
+        color: $dark-blue;
+    
+    }
+    
+    .hero-img {
+        position: relative;
+        width: 100%;
+        max-width: 1000px;
+        z-index: -1;
+    }
+    
+    .clouds-img {
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    
+    .parent {
+        display: flex;
+        overflow: hidden;
+        display: grid;
+    
+    }
+    
+    .right {
+        position: absolute;
+        top: 200px;
+        right: 0;
+    } 
 }
-
-.right {
-    position: absolute;
-    top: 200px;
-    right: 0;
-} 
 
 .quote {
     @include center();
@@ -295,65 +307,126 @@ h3 {
 
 
 
+$button-size : 1.6rem;
+$transition: .3s; // increase this to see the transformations in slow-motion
+
+.lines-button {
+    display: block;
+    transition: .3s;
+    cursor: pointer;
+    user-select: none;
+    margin-left: 0;
+    //padding-bottom: $button-size/2;
+
+    .lines {
+        margin-left: -50%;
+
+        &:before { top: $button-size/3; }
+        &:after { top: -$button-size/3; }
+    }
+}
+
+@mixin line {
+    display: inline-block;
+    width: $button-size;
+    height: 2px;
+    background: #A2A2A2;
+    border-radius: $button-size/14;
+    transition: $transition;
+}
+
+.lines {
+    //create middle line
+    @include line;
+    position: relative;
+    top: -5px;
+    right: -15px;
+
+    /*create the upper and lower lines as pseudo-elements of the middle line*/
+    &:before, &:after {
+        @include line;
+        position: absolute;
+        left:0;
+        content: '';
+        transform-origin: $button-size/14 center;
+    }
+    &:before {
+        top: $button-size/4;
+    }
+    &:after {
+        top: -$button-size/4;
+    }
+}
+
+.lines-button.x.close .lines {
+    /*hide the middle line*/
+    background: transparent;
+
+    /*overlay the lines by setting both their top values to 0*/
+    &:before, &:after {
+        transform-origin: 50% 50%;
+        top: 0;
+        width: $button-size;
+    }
+
+    // rotate the lines to form the x shape
+    &:before{
+        transform: rotate3d(0,0,1,45deg);
+    }
+    &:after{
+        transform: rotate3d(0,0,1,-45deg);
+    }
+}
 
 header {
-    display: flex;
+    display: flex !important;
+    justify-content: space-between;
     align-items: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
     position: fixed;
     top: 0;
     width: 100%;
-    height: 50px;
+    height: 60px;
     background: white;
     z-index: 1000;
     transition: top 0.3s;
-    overflow-y: hidden;
+    padding: 0 20px;
+
+    #menu-icon, #menu-icon ~ label, input[type=checkbox] {
+        display: none;
+        z-index: 5;
+    }
+
+    .logo-img {
+        width: 40px;
+    }
+
     a {
         text-decoration: none;
         color: black;
         transition: 0.2s;
     }
-
+    
     .collapsible-menu {
-        position: fixed;
         display: flex;
-        width: 100%;
-        top: 30px;
         transition: 0.3s;
 
         ul {
             list-style: none;
             display: flex;
-            align-items: center;
             margin-bottom: 0;
-            position: absolute;
-            top: 50%;
-            left: 78%;
-            transform: translate(-50%, -50%);
 
             .nav-link {
                 margin: 0 30px;
                 padding: 0;
                 font-size: 18px;
                 border-bottom: 2px solid rgba($color: $orange-color, $alpha: 0.0);
-                /* used to be $yellow */
                 transition: 0.3s;
                 line-height: initial;
                 white-space: nowrap;
 
                 &:hover {
                     border-bottom: 2px solid $orange-color;
-                    /* used to be $yellow */
                 }
-            }
-
-            .nav-item {
-                font-size: 18px;
-                justify-content: center;
-                text-align: center;
-                align-items: center !important;
-                text-align: left !important;
             }
             
         
@@ -386,11 +459,10 @@ header {
 
 footer{
     margin-top: 100px;
-    background-image: url("/images/footer.png");
+    background-image: url("images/footer.png");
+    background-size: contain;
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center;
-    height: 350px;
+    width: 100%;
 
     .copyright{
         text-align: center;
