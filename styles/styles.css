@@ -80,6 +80,10 @@ h3 {
   scroll-margin-top: 3.5rem;
 }
 
+#change-the-world {
+  position: relative;
+}
+
 #change-the-world .card-img {
   padding: 50px;
 }
@@ -151,13 +155,21 @@ h3 {
 }
 
 .img-windmill2 {
+  position: absolute;
+  top: 10px;
+  right: 20px;
   max-width: 290px;
   height: auto;
+  z-index: -1;
 }
 
 .img-windmill1 {
+  position: absolute;
+  bottom: 100px;
+  left: 20px;
   max-width: 285px;
   height: auto;
+  z-index: -1;
 }
 
 #home {
