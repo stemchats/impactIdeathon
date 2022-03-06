@@ -317,11 +317,11 @@ header {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 60px;
+    height: 50px;
     background: white;
     z-index: 1000;
     transition: top 0.3s;
-    //overflow: hidden;
+    overflow-y: hidden;
     a {
         text-decoration: none;
         color: black;
@@ -399,37 +399,33 @@ header {
 
 footer{
     margin-top: 100px;
+    background-image: url("/images/footer.png");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    height: 350px;
 
     .copyright{
         text-align: center;
         padding-top: 0px;
-    
-        
     }
 
-    .two-containerfluid{
-        padding-top: 100px;
-        z-index: 2;
-        
-    }
     .socials{
         margin: 20px;
         text-align: center;
         .icon{
-            padding:10px;
+            padding: 0 10px;
             color:white;
+            transition: 0.4s;
+
+            &:hover {
+                color: $red-color;
+            }
         }
     }
     
     p{
         color:white;
-        
-    }
-
-    .wave{
-        width: 100%;
-        position: absolute;
-        z-index: 1;
         
     }
 }
