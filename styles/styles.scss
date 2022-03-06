@@ -101,6 +101,7 @@ h3 {
 // }
 
 #change-the-world {
+    position: relative;
     .card-img {
         padding: 50px;
     }
@@ -109,7 +110,9 @@ h3 {
         border-radius: 1rem;
         margin: 10px;
     }
+
 }
+
 
 #team_container {
     max-width: 1250px;
@@ -159,13 +162,23 @@ h3 {
 }
 
 .img-windmill2{
+    position: absolute;
+    top: 10px;
+    // bottom: 100px;
+    right: 20px;
     max-width: 290px;
     height:auto;
+    z-index: -1;
 }
 
 .img-windmill1{
+    position: absolute;
+    // top: 10px;
+    bottom: 100px;
+    left: 20px;
     max-width: 285px;
     height:auto;
+    z-index: -1;
 }
 // HOME
 
