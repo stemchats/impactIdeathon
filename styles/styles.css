@@ -466,36 +466,37 @@ header .collapsible-menu ul .nav-link:hover {
   border-bottom: 2px solid #fa9856;
 }
 
-footer {
-  margin-top: 100px;
-  background-image: url("images/footer.png");
-  background-size: contain;
+footer .wave {
+  background-image: url("/images/footer.png");
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 550px;
   width: 100%;
 }
 
-footer .copyright {
+footer .wave .copyright {
   text-align: center;
   padding-top: 0px;
 }
 
-footer .socials {
+footer .wave .socials {
+  padding-top: 375px;
   margin: 20px;
   text-align: center;
 }
 
-footer .socials .icon {
+footer .wave .socials .icon {
   padding: 0 10px;
   color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
 
-footer .socials .icon:hover {
+footer .wave .socials .icon:hover {
   color: #f27370;
 }
 
-footer p {
+footer .wave p {
   color: white;
 }
 
