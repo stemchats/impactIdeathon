@@ -466,7 +466,25 @@ header {
 //         }
 //     }
 // }
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
+    .about-container {
+        max-width: 1250px;
+    }
+
+    .row {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .box-description {
+        padding: 0 30px;
+    }
+}
 
 
 

@@ -466,6 +466,37 @@ header .collapsible-menu ul .nav-link:hover {
   border-bottom: 2px solid #fa9856;
 }
 
+#about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .about-container {
+  max-width: 1250px;
+}
+
+#about .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#about .box-description {
+  padding: 0 30px;
+}
+
 footer .wave {
   background-image: url("/images/footer.png");
   background-repeat: no-repeat;
