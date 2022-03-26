@@ -464,10 +464,21 @@ header .collapsible-menu ul .nav-link {
   transition: 0.3s;
   line-height: initial;
   white-space: nowrap;
+  float: right;
 }
 
 header .collapsible-menu ul .nav-link:hover {
   border-bottom: 2px solid #fa9856;
+}
+
+header .navbar-nav {
+  margin-left: auto;
+}
+
+@media screen and (max-device-width: 1000px) {
+  header .collapsible-menu ul .nav-link {
+    margin: 0 0px;
+  }
 }
 
 #about .about-container {
