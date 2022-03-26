@@ -1,54 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <html>
-
 <body>
     
-    <header>
+    
+        
+
+<header>     
+    <nav class="collapsible-menu navbar navbar-expand-lg navbar-light fixed-top bg-white rounded">
         <div class="logo">
             <a href="/"><img src="/images/globe-icon.png" class="logo-img"></a>
         </div>
+        <button class="lines-button x navbar-toggler ml-auto custom-toggler" type="button" role="button" aria-label="Toggle Navigation" data-toggle="collapse" data-target="#mainNav">
+            <span class="fas fa-bars"></span>
+        </button>
+        <div class="collapse navbar-collapse mr-auto" id="mainNav">
+            <div class="navbar-nav">
+                <ul class="navbar-nav ml-auto">
+                    <!-- about us dropdown -->
+                    <li data-id="1" class="nav-item">
+                      <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li data-id="2" class="nav-item">
+                        <a class="nav-link" href="#change-the-world">details</a>
+                    </li>
+                    <li data-id="3" class="nav-item">
+                        <a class="nav-link" href="#testimonies">testimonies</a>
+                    </li>
+                    <li data-id="4" class="nav-item">
+                        <a class="nav-link" href="#judges">judges</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
 
-        <input type="checkbox" id="menu-icon">
-        <!-- <label for="menu-icon"><i class="fas fa-bars"></i></label> -->
+
+
+
+       <!--- <nav class="collapsible-menu navbar navbar-expand-lg">
+
+            <div class="logo">
+                <a href="/"><img src="/images/globe-icon.png" class="logo-img"></a>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="fas fa-bars"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse mr-auto" id="navbarSupportedContent">
+                <div class="navbar-nav">
+                    <ul class="navbar-nav ml-auto">
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                        </li>
+
+                        <li class="nav-item">
+                        <a class="nav-link" href="#change-the-world">details</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                        <a class="nav-link" href="#testimonies">testimonies</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#judges">judges</a>
+                        </li>
+
+                         <li class="nav-item">
+                            <a class="nav-link" href="#faq">faq</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resources">resources</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#donate">donate</a>
+                        </li> 
+                        
+                    </ul>
+                </div>
+
+            </div>
+        </nav> --->
+
+
+
         
-        <label for="menu-icon" class="lines-button x" >
-            <span class="lines"></span>
-        </label>
-        <!-- <button class="lines-button x navbar-toggler ml-auto custom-toggler" type="button" role="button" aria-label="Toggle Navigation" data-toggle = "collapse" data-target = "#mainNav">
-        </button> -->
 
-        <nav class="collapsible-menu">
-            <ul>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">about</a>
-                </li>
-                
-                <li class="nav-item">
-                    <a class="nav-link" href="#testimonies">testimonies</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#judges" >judges</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#faq">faq</a>
-                </li>
-
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#resources">resources</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#donate">donate</a>
-                </li> -->
-                
-            </ul>
-        </nav>
-    </header>
   
    
 </body>
 
 </html>
+
