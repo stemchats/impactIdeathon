@@ -237,6 +237,42 @@ h3 {
   right: 0;
 }
 
+#home form {
+  margin-top: 190px;
+}
+
+#home form .form-row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#home form .form-row .btn {
+  background-color: #26589d;
+  border: 0px;
+}
+
+#home form .form-row .btn:hover {
+  background-color: #9eb5d4;
+}
+
+#home form .form-row .btn:active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: auto 5px #9eb5d4;
+}
+
+#home form label {
+  font-size: 22px;
+  font-weight: bolder;
+}
+
+#home form .form-control {
+  width: 500px;
+  text-align: center;
+  border: 0px;
+}
+
 .quote {
   display: block;
   text-align: center;
@@ -532,7 +568,7 @@ footer .wave .socials .icon {
 }
 
 footer .wave .socials .icon:hover {
-  color: #f27370;
+  color: #9eb5d4;
 }
 
 footer .wave p {

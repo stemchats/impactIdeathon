@@ -244,6 +244,43 @@ h3 {
         top: 200px;
         right: 0;
     } 
+
+    
+    form{
+        margin-top: 190px;
+        
+        .form-row{
+            justify-content: center;
+
+            .btn{
+                background-color: $darker-blue;
+                border:0px;
+
+                &:hover{
+                    background-color:#9eb5d4;
+                }
+
+                &:active{
+                    box-shadow:none;
+                    outline:auto 5px #9eb5d4;
+                }
+            }
+        }
+
+        label{
+            font-size: 22px;
+            font-weight: bolder;
+        }
+
+        .form-control{
+            width:500px;
+            text-align:center;
+            border:0px;
+        }
+
+
+
+    }
 }
 
 .quote {
@@ -533,7 +570,7 @@ footer{
                 transition: 0.4s;
     
                 &:hover {
-                    color: $red-color;
+                    color: $light-blue;
                 }
             }
         }
