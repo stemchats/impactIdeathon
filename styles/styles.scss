@@ -107,17 +107,7 @@ h3 {
 //     border-radius: 0.6rem !important; 
 // }
 
-#change-the-world {
-    position: relative;
-    .card-img {
-        padding: 50px;
-    }
-    .card {
-        border: none;
-        border-radius: 1rem;
-        margin: 10px;
-    }
-}
+
 
 
 #team_container {
@@ -167,25 +157,7 @@ h3 {
     }
 }
 
-.img-windmill2{
-    position: absolute;
-    top: 10px;
-    // bottom: 100px;
-    right: 20px;
-    max-width: 290px;
-    height:auto;
-    z-index: -1;
-}
 
-.img-windmill1{
-    position: absolute;
-    // top: 10px;
-    bottom: 100px;
-    left: 20px;
-    max-width: 285px;
-    height:auto;
-    z-index: -1;
-}
 
 // HOME
 #home {
@@ -506,6 +478,95 @@ header {
 //         }
 //     }
 // }
+
+//CHANGE THE WORLD
+
+// .img-windmill2{
+//     position: absolute;
+//     top: 10px;
+//     // bottom: 100px;
+//     right: 20px;
+//     max-width: 290px;
+//     height:auto;
+//     z-index: -1;
+// }
+
+// .img-windmill1{
+//     position: absolute;
+//     // top: 10px;
+//     bottom: 100px;
+//     left: 20px;
+//     max-width: 285px;
+//     height:auto;
+//     z-index: -1;
+// }
+#change-the-world {
+    position: relative;
+    .card-img {
+        width:200px;
+        padding: 50px;
+    }
+    .card {
+        border: none;
+        border-radius: 1rem;
+        margin: 10px;
+        height:500px;
+        background-color: rgba(255,255,255, 0.3);
+    }
+}
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+section {
+    // transform-style: preserve-3d;
+    // position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.no-parallax{
+    z-index: 999;
+}
+
+.parallax{
+    transform-style: preserve-3d;
+    position: relative;
+    &:after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        transform: translateZ(-1px) scale(1.5);
+        background-size: 100%;
+        z-index: -1;
+    }
+}
+
+.bg {
+    &:after{
+        background: url("/images/windmills.png");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 1000px;
+    }
+}
+
+#change-the-world {
+    .world-container {
+        max-width: 1100px;
+    }
+}
+
+
+
 #about {
     .about-container {
         max-width: 1250px;
@@ -522,11 +583,6 @@ header {
     }
 }
 
-#change-the-world {
-    .world-container {
-        max-width: 1100px;
-    }
-}
 
 
 
