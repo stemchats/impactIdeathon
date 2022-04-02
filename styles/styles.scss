@@ -449,14 +449,30 @@ header {
                 transition: 0.3s;
                 line-height: initial;
                 white-space: nowrap;
+                float: right;
 
                 &:hover {
                     border-bottom: 2px solid $orange-color;
                 }
-            }
+            }     
                     
         }
+    }   
+
+    .navbar-nav {
+        margin-left: auto;
     }
+
+    @media screen and (max-device-width: 1000px) {
+        .collapsible-menu {
+            ul {
+                .nav-link {
+                    margin: 0 0px;
+                }
+            }
+        }
+    }
+
 }
 
 // #intro {
@@ -569,7 +585,7 @@ section {
 
 #about {
     .about-container {
-        max-width: 1250px;
+        max-width: 1350px;
     }
 
     .row {
@@ -589,6 +605,7 @@ section {
 footer{
     .wave{
         background-image: url("/images/footer.png");
+        background-position: 0 100px; 
         background-repeat: no-repeat;
         background-size:cover;
         height:550px;
