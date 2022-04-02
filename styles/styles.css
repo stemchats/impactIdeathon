@@ -542,6 +542,7 @@ header .navbar-nav {
 
 footer .wave {
   background-image: url("/images/footer.png");
+  background-position: 0 100px;
   background-repeat: no-repeat;
   background-size: cover;
   height: 550px;
