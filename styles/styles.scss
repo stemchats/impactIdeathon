@@ -1,4 +1,6 @@
+// Karla
 @import url('https://fonts.googleapis.com/css?family=Karla&display=swap');
+// Josefin Sans
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
 // FONTS & COLORS
@@ -36,6 +38,7 @@ $card-border-width: 0px;
 // DEFAULT STYLES
 * {
     font-family: $main-font;
+    font-size: 17px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
