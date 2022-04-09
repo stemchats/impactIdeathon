@@ -177,6 +177,8 @@ h5 {
 
             h3 {
                 font-weight: bold;
+            }
+            h5 {
                 margin-bottom: 20px;
             }
         }
@@ -316,7 +318,7 @@ header {
     
     .collapsible-menu {
         display: flex;
-        padding: 5px 10px;
+        padding: 8px 10px;
         transition: 0.3s;
 
         ul {
@@ -457,7 +459,6 @@ header {
         font-weight: lighter;
         font-size: 25px;
         color: $dark-blue;
-    
     }
     
     .home-desc {
@@ -563,7 +564,8 @@ header {
 
         img {
             width: 100%;
-            max-width: 400px;
+            max-width: 350px;
+            margin-bottom: 20px;
         }
     }
 
@@ -600,7 +602,7 @@ header {
 #faq {
     .faq-container {
         width: 100%;
-        max-width: 1250px;
+        max-width: 1200px;
         padding: 0 0.5rem;
 
         .faq-question {

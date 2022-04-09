@@ -161,6 +161,9 @@ h5 {
 
 .slideshow-container .slideshow .slide h3 {
   font-weight: bold;
+}
+
+.slideshow-container .slideshow .slide h5 {
   margin-bottom: 20px;
 }
 
@@ -322,7 +325,7 @@ header .collapsible-menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 5px 10px;
+  padding: 8px 10px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -567,7 +570,8 @@ header .navbar-light .navbar-toggler {
 
 #about .about-container img {
   width: 100%;
-  max-width: 400px;
+  max-width: 350px;
+  margin-bottom: 20px;
 }
 
 #about .row {
@@ -610,7 +614,7 @@ header .navbar-light .navbar-toggler {
 
 #faq .faq-container {
   width: 100%;
-  max-width: 1250px;
+  max-width: 1200px;
   padding: 0 0.5rem;
 }
 
