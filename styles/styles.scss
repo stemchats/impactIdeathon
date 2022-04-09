@@ -91,8 +91,11 @@ h2 {
 }
 
 h3 {
-    color: $light-blue;
     font-size: $small-font-description;
+}
+
+h5 {
+    color: $darker-blue;
 }
 
 
@@ -146,47 +149,64 @@ h3 {
 
 /* Slideshow container */
 .slideshow-container {
-  position: relative;
-  margin: auto;
-  background: #f1f1f1f1;
-  width: 75em;
-  border-radius: 20px 20px 20px 20px;
+    padding: 0 2rem;
 }
 
-.slideshow-text {
-    padding: 0 80px 0 80px;
-}
-
-/* Slides */
-.mySlides {
-  display: none;
-  padding: 80px;
-  blockquote {
-    text-align: left;
-  } 
-}
+.slideshow {
+    position: relative;
+    width: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    margin: 3rem 0 0;
+    padding: 2rem;
+    border-radius: 10px;
+    overflow: hidden;
   
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  margin-top: -30px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
+    .slide {
+      @include center();
+      animation-name: slideLeft;
+      animation-duration: 0.65s;
+    }
+  
+    .left-arrow,
+    .right-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 28px;
+      cursor: pointer;
+      padding: 0.9rem 0.8rem 0.7rem;
+      font-size: 24px;
+      line-height: 0.5;
+      border-radius: 50%;
+      transition: background-color 0.3s;
+  
+      &:hover {
+        background: $orange-color;
+      }
+    }
+  
+    .left-arrow {
+      left: 30px;
+    }
+  
+    .right-arrow {
+      right: 30px;
+    }
+  
+    img {
+      margin-top: 0;
+      margin-bottom: 20px;
+      border-radius: 50%;
+      padding: 0;
+      width: 200px;
+    }
+  
+    .card-text {
+      position: relative;
+    }
+  }
 
 
 
@@ -342,6 +362,10 @@ header {
         border: none;
         border-radius: 1rem;
         margin: 10px;
+
+        .card-title {
+            color: $darker-blue;
+        }
     }
 }
 
@@ -390,6 +414,7 @@ header {
         .card-text{
             text-align:center;
             font-size: 18px;
+            color: $darker-blue;
         }
     }
 }
