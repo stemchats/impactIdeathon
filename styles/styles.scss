@@ -38,7 +38,7 @@ $card-border-width: 0px;
 // DEFAULT STYLES
 * {
     font-family: $main-font;
-    font-size: 17px;
+    font-size: 18px;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -166,52 +166,44 @@ h5 {
         transform: translateX(-50%);
         background-color: white;
         margin: 3rem 0 0;
-        padding: 2rem;
-        border-radius: 10px;
+        padding: 2.5rem 1rem 1rem;
+        border-radius: 30px;
         overflow: hidden;
       
         .slide {
-          @include center();
-          animation-name: slideLeft;
-          animation-duration: 0.65s;
+            @include center();
+            animation-name: slideLeft;
+            animation-duration: 0.65s;
+
+            h3 {
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
         }
       
         .left-arrow,
         .right-arrow {
-          position: absolute;
-          top: 50%;
-          transform: translateY(-50%);
-          font-size: 28px;
-          cursor: pointer;
-          padding: 0.9rem 0.8rem 0.7rem;
-          font-size: 24px;
-          line-height: 0.5;
-          border-radius: 50%;
-          transition: background-color 0.3s;
-      
-          &:hover {
-            background: $orange-color;
-          }
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 28px;
+            cursor: pointer;
+            padding: 0.9rem 0.8rem 0.7rem;
+            font-size: 24px;
+            line-height: 0.5;
+            border-radius: 50%;
+            transition: 0.35s;
+        
+            &:hover {
+                background: $darker-blue;
+                color: white;
+            }
         }
-      
         .left-arrow {
-          left: 30px;
+            left: 30px;
         }
-      
         .right-arrow {
-          right: 30px;
-        }
-      
-        img {
-          margin-top: 0;
-          margin-bottom: 20px;
-          border-radius: 50%;
-          padding: 0;
-          width: 200px;
-        }
-      
-        .card-text {
-          position: relative;
+            right: 30px;
         }
     }
 }
@@ -509,7 +501,7 @@ header {
 
     
     form{
-        margin-top: 190px;
+        margin-top: 100px;
         
         .form-row{
             justify-content: center;
@@ -535,7 +527,7 @@ header {
         }
 
         .form-control{
-            width:500px;
+            max-width:500px;
             text-align:center;
             border:0px;
             margin-bottom: 10px;
@@ -567,7 +559,12 @@ header {
 // }
 #about {
     .about-container {
-        max-width: 1350px;
+        max-width: 1250px;
+
+        img {
+            width: 100%;
+            max-width: 400px;
+        }
     }
 
     .row {
@@ -604,10 +601,20 @@ header {
     .faq-container {
         width: 100%;
         max-width: 1250px;
+        padding: 0 0.5rem;
 
         .faq-question {
+            margin-bottom: 15px;
+
             h2 {
                 font-weight: bold;
+                margin-left: 20px;
+            }
+
+            p {
+                background-color: white;
+                padding: 15px 25px;
+                border-radius: 30px;
             }
         }
 
