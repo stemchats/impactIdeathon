@@ -1,4 +1,4 @@
-const animate = document.getElementById("team_container");
+const animate = document.getElementById("team-container");
 const team = document.getElementById("team");
 const url = "/images/headshots/";
 //create all the team members
@@ -64,8 +64,6 @@ createMembers = (members) => {
         modalHeader.appendChild(button);
         modalBody = document.createElement("div");
         modalBody.className = "modal-body";
-        container = document.createElement("div");
-        container.className = "container-fluid";
         row = document.createElement("div");
         row.className = "row";
         col1 = document.createElement("div");
@@ -103,8 +101,7 @@ createMembers = (members) => {
         col2.appendChild(hometown);
         col2.appendChild(bio);
         row.appendChild(col2);
-        container.appendChild(row);
-        modalBody.appendChild(container);
+        modalBody.appendChild(row);
         modalContent.appendChild(modalHeader);
         modalContent.appendChild(modalBody);
         modalDialog.appendChild(modalContent);
@@ -112,7 +109,7 @@ createMembers = (members) => {
         return modal;
       }
       team.appendChild(createCard());
-      team.appendChild(createModal());
+      // team.appendChild(createModal());
     });
 }
 
