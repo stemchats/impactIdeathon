@@ -130,10 +130,11 @@ h5 {
 
 /* Slideshow container */
 .slideshow-container {
+  max-width: 1250px;
   padding: 0 2rem;
 }
 
-.slideshow {
+.slideshow-container .slideshow {
   position: relative;
   width: 100%;
   left: 50%;
@@ -146,7 +147,7 @@ h5 {
   overflow: hidden;
 }
 
-.slideshow .slide {
+.slideshow-container .slideshow .slide {
   display: block;
   text-align: center;
   margin-right: auto;
@@ -157,8 +158,8 @@ h5 {
           animation-duration: 0.65s;
 }
 
-.slideshow .left-arrow,
-.slideshow .right-arrow {
+.slideshow-container .slideshow .left-arrow,
+.slideshow-container .slideshow .right-arrow {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -173,20 +174,20 @@ h5 {
   transition: background-color 0.3s;
 }
 
-.slideshow .left-arrow:hover,
-.slideshow .right-arrow:hover {
+.slideshow-container .slideshow .left-arrow:hover,
+.slideshow-container .slideshow .right-arrow:hover {
   background: #fa9856;
 }
 
-.slideshow .left-arrow {
+.slideshow-container .slideshow .left-arrow {
   left: 30px;
 }
 
-.slideshow .right-arrow {
+.slideshow-container .slideshow .right-arrow {
   right: 30px;
 }
 
-.slideshow img {
+.slideshow-container .slideshow img {
   margin-top: 0;
   margin-bottom: 20px;
   border-radius: 50%;
@@ -194,7 +195,7 @@ h5 {
   width: 200px;
 }
 
-.slideshow .card-text {
+.slideshow-container .slideshow .card-text {
   position: relative;
 }
 
@@ -384,7 +385,7 @@ header .navbar-light .navbar-toggler {
 }
 
 #team-container {
-  max-width: 1250px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -607,8 +608,29 @@ header .navbar-light .navbar-toggler {
   max-width: 30rem;
 }
 
-#faq .row {
+#faq .faq-container {
   width: 100%;
+  max-width: 1250px;
+}
+
+#faq .faq-container .faq-question h2 {
+  font-weight: bold;
+}
+
+#faq .faq-container .accordion .accordion-button {
+  font-weight: bold;
+  font-size: 24px;
+  color: #22559c;
+  background-color: #e5edf1;
+}
+
+#faq .faq-container .accordion .accordion-item {
+  width: 100%;
+  border: none;
+}
+
+#faq .faq-container .accordion .accordion-item .accordion-body {
+  background-color: #e5edf1;
 }
 
 footer .wave {

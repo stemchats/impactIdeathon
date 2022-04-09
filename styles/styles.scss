@@ -153,64 +153,65 @@ h5 {
 
 /* Slideshow container */
 .slideshow-container {
+    max-width: 1250px;
     padding: 0 2rem;
-}
 
-.slideshow {
-    position: relative;
-    width: 100%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: white;
-    margin: 3rem 0 0;
-    padding: 2rem;
-    border-radius: 10px;
-    overflow: hidden;
-  
-    .slide {
-      @include center();
-      animation-name: slideLeft;
-      animation-duration: 0.65s;
+    .slideshow {
+        position: relative;
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: white;
+        margin: 3rem 0 0;
+        padding: 2rem;
+        border-radius: 10px;
+        overflow: hidden;
+      
+        .slide {
+          @include center();
+          animation-name: slideLeft;
+          animation-duration: 0.65s;
+        }
+      
+        .left-arrow,
+        .right-arrow {
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 28px;
+          cursor: pointer;
+          padding: 0.9rem 0.8rem 0.7rem;
+          font-size: 24px;
+          line-height: 0.5;
+          border-radius: 50%;
+          transition: background-color 0.3s;
+      
+          &:hover {
+            background: $orange-color;
+          }
+        }
+      
+        .left-arrow {
+          left: 30px;
+        }
+      
+        .right-arrow {
+          right: 30px;
+        }
+      
+        img {
+          margin-top: 0;
+          margin-bottom: 20px;
+          border-radius: 50%;
+          padding: 0;
+          width: 200px;
+        }
+      
+        .card-text {
+          position: relative;
+        }
     }
-  
-    .left-arrow,
-    .right-arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      font-size: 28px;
-      cursor: pointer;
-      padding: 0.9rem 0.8rem 0.7rem;
-      font-size: 24px;
-      line-height: 0.5;
-      border-radius: 50%;
-      transition: background-color 0.3s;
-  
-      &:hover {
-        background: $orange-color;
-      }
-    }
-  
-    .left-arrow {
-      left: 30px;
-    }
-  
-    .right-arrow {
-      right: 30px;
-    }
-  
-    img {
-      margin-top: 0;
-      margin-bottom: 20px;
-      border-radius: 50%;
-      padding: 0;
-      width: 200px;
-    }
-  
-    .card-text {
-      position: relative;
-    }
-  }
+}
 
 
 
@@ -375,7 +376,7 @@ header {
 
 
 #team-container {
-    max-width: 1250px;
+    max-width: 1100px;
     margin: 0 auto;
 }
 #team {
@@ -597,8 +598,33 @@ header {
 }
 
 #faq {
-    .row {
+    .faq-container {
         width: 100%;
+        max-width: 1250px;
+
+        .faq-question {
+            h2 {
+                font-weight: bold;
+            }
+        }
+
+        .accordion {
+            .accordion-button {
+                font-weight: bold;
+                font-size: 24px;
+                color: $dark-blue;
+                background-color: $background-blue;
+            }
+
+            .accordion-item {
+                width: 100%;
+                border: none;
+
+                .accordion-body {
+                    background-color: $background-blue;
+                }
+            }
+        }
     }
 }
 
