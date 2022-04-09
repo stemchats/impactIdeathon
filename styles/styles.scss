@@ -43,6 +43,15 @@ $card-border-width: 0px;
     overflow-x: hidden;
 }
 
+body {
+    background-color: $background-blue !important;
+}
+
+iframe {
+    display: none;
+    visibility: hidden;
+}
+
 .small-box-title {
     font-size: $small-font-title;
     font-weight: bold;
@@ -94,6 +103,7 @@ h3 {
     flex-direction: column;
     margin: 30px;
     min-height: 100vh;
+    overflow-y: hidden;
 
     &:target { //allows header space when jumped to with id anchor link
             // padding-top: 3rem !important;

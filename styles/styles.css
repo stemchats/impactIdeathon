@@ -17,6 +17,15 @@
   overflow-x: hidden;
 }
 
+body {
+  background-color: #e5edf1 !important;
+}
+
+iframe {
+  display: none;
+  visibility: hidden;
+}
+
 .small-box-title {
   font-size: 32px;
   font-weight: bold;
@@ -75,6 +84,7 @@ h3 {
           flex-direction: column;
   margin: 30px;
   min-height: 100vh;
+  overflow-y: hidden;
 }
 
 .container-fluid:target {
