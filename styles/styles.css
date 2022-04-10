@@ -22,10 +22,6 @@ body {
   background-color: #e5edf1 !important;
 }
 
-.aos-animate {
-  overflow-y: hidden;
-}
-
 iframe {
   display: none;
   visibility: hidden;
@@ -583,6 +579,7 @@ header .navbar-light .navbar-toggler {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  overflow-y: hidden;
 }
 
 #about .box-description {
