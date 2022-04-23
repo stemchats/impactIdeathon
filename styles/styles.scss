@@ -50,10 +50,6 @@ body {
     background-color: $background-blue !important;
 }
 
-.aos-animate {
-    overflow-y: hidden;
-}
-
 iframe {
     display: none;
     visibility: hidden;
@@ -573,6 +569,7 @@ header {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        overflow-y: hidden;
     }
 
     .box-description {
