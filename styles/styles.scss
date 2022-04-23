@@ -595,6 +595,11 @@ header {
             .card {
                 max-width: 30rem;
             }
+
+            .card-img {
+                max-width: 70%;
+                margin: auto;
+            }
         }
     }
 }

@@ -612,6 +612,11 @@ header .navbar-light .navbar-toggler {
   max-width: 30rem;
 }
 
+#change-the-world .world-container .row .card-img {
+  max-width: 70%;
+  margin: auto;
+}
+
 #faq .faq-container {
   width: 100%;
   max-width: 1200px;
