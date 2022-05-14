@@ -622,14 +622,18 @@ header .navbar-light .navbar-toggler {
 
 #faq .faq-container .faq-question {
   margin-bottom: 15px;
+  border: none;
+  outline: none;
+  background-color: transparent;
 }
 
 #faq .faq-container .faq-question h2 {
   font-weight: bold;
   margin-left: 20px;
+  text-align: left;
 }
 
-#faq .faq-container .faq-question p {
+#faq .faq-container .answer p {
   background-color: white;
   padding: 15px 25px;
   border-radius: 30px;
